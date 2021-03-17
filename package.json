@@ -10,14 +10,21 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:tools.helloWorld"
+		"onCommand:tools.showTool"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "tools.helloWorld",
-				"title": "Hello World"
+				"command": "tools.showTool",
+				"title": "Dev Tools"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "tools.showTool",
+				"key": "ctrl+shift+t",
+				"mac": "cmd+shift+t"
 			}
 		]
 	},
