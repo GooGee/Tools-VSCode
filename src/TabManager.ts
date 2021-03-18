@@ -1,5 +1,5 @@
 import * as vscode from 'vscode'
-import makeHTML from './helper/html'
+import makeHTML from './helper/makeHTML'
 
 export class TabManager {
     readonly map: Map<string, vscode.WebviewPanel> = new Map()
